@@ -99,7 +99,7 @@
     }
   })
 
-  $: photos, layout()
+  $: layout()
 </script>
 
 <div class="relative isolate">

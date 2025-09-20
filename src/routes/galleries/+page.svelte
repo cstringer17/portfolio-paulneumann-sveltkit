@@ -6,6 +6,5 @@
 <GalleriesGrid
   galleries={data.galleries}
   title="All Galleries"
-  subtitle={null}
   showHeader={true}
 />
