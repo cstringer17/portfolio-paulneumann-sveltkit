@@ -1,6 +1,7 @@
 import { createClient } from '@sanity/client';
 import imageUrlBuilder from '@sanity/image-url';
 import { env as publicEnv } from '$env/dynamic/public';
+import type {SanityImageSource} from "@sanity/image-url/lib/types/types";
 
 const projectId = publicEnv.PUBLIC_SANITY_PROJECT_ID || '';
 const dataset = publicEnv.PUBLIC_SANITY_DATASET || '';
@@ -23,4 +24,4 @@ export const client = createClient({
 });
 
 const builder = imageUrlBuilder(client);
-export const urlFor = (src: unknown) => builder.image(src);
+export const urlFor = (src: unknown) => builder.image(<SanityImageSource>src);
