@@ -3,7 +3,6 @@
   let open = false;
 
   const links = [
-    { href: '/galleries', label: 'Portfolio' },
     { href: '/stories',   label: 'Stories' },
     { href: '/trips',     label: 'Trips' },
     { href: '/contact',   label: 'Contact' }

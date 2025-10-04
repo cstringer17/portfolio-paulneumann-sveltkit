@@ -8,7 +8,6 @@
     blurb:
       "Close encounters in the Indian Ocean — tiger sharks, pelagics, and the stories behind every frame.",
     ctas: [
-      { href: "/galleries", label: "Portfolio" },
       { href: "/stories", label: "Stories from the Sea" },
       { href: "/trips", label: "Trips" },
       { href: "/contact", label: "Contact & Socials" }
@@ -75,28 +74,22 @@
       <p class="mt-4 text-white font-light font-montserrat drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]">
         {hero.blurb}
       </p>
-
       <!-- CTA cluster -->
-      <nav aria-label="Hero quick links" class="mt-7 sm:mt-8">
-  <ul class="flex flex-wrap justify-center gap-3 sm:gap-4">
-    {#each hero.ctas as c}
-      <li>
-        <a
-          href={c.href}
-          class="px-4 sm:px-5 py-2
-                 text-cyan-100 border border-cyan-800/60 backdrop-blur-[2px]
-                 hover:border-cyan-400 hover:text-cyan-300
-                 transition font-montserrat uppercase tracking-wide
-                 text-[11px] sm:text-sm drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]"
-          target={c.href.startsWith('http') ? '_blank' : undefined}
-          rel={c.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-        >
-          {c.label}
-        </a>
-      </li>
-    {/each}
-  </ul>
+<nav aria-label="Hero quick link" class="mt-7 sm:mt-8">
+  <a
+    href="/stories"
+    class="inline-block px-5 sm:px-6 py-2
+           text-slate-100 border border-slate-300/60 backdrop-blur-[2px]
+           hover:border-white hover:text-white
+           transition font-montserrat uppercase tracking-wide
+           text-[11px] sm:text-sm drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]
+           bg-gradient-to-b from-white/10 to-transparent"
+  >
+    Stories from the Sea
+  </a>
 </nav>
+
+
 
     </div>
 
